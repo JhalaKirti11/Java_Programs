@@ -64,13 +64,11 @@ public class _01Banking{
         double withdraw = sc.nextDouble();
         SavingAccount sa = new SavingAccount(balance);
             sa.deposit(deposit);
-            sa.addInterest();           // working properly
+            sa.addInterest();
         CheckingAccount ca = new CheckingAccount(sa.balance);
             ca.withdraw(withdraw);
-           // sa.addInterest();           // not working properly
             double amount = ca.getBalance();
         System.out.println("Total balance is: "+amount);
         sc.close();
     }
-
 }
