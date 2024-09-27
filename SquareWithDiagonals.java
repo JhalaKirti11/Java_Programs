@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Array {
+public class SquareWithDiagonals {
     public static void main(String[] arrgs){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of lines: ");
