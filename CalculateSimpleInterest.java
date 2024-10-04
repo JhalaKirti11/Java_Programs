@@ -1,8 +1,10 @@
 
+
 class Interest{
-    public static void simpleInterest(int p, int r, int t){
+    public static double simpleInterest(int p, int r, int t){
         int si = (p*r*t)/100;
-        System.out.println(si);
+
+        return si;
     }
 }
     public class CalculateSimpleInterest {
@@ -18,7 +20,11 @@ class Interest{
         System.out.print("enter the time period: ");
         int t = sc.nextInt();
         
-        Interest.simpleInterest(p,r,t);
+        double si = Interest.simpleInterest(p,r,t);
+        System.out.println(si);
+        double amount = p+si;
+        System.out.println("Total amount: "+amount);
+
         sc.close();
     }
 }
