@@ -2,23 +2,27 @@
 
 import java.util.Scanner;
 public class PalindromeNumber {
+    public static int checkPalindrome(int k){
+        int palindrome = 0;
+        while(k>0){
+            int r = k%10;
+            palindrome = palindrome*10+r;
+            k/=10;
+        }
+        return palindrome;
+    }
+    
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a num: ");
+        System.out.print("Enter the number: ");
         int n = sc.nextInt();
-        int t = n;
-        int sum = 0;
-        while(t>0){
-          int r = t%10;
-          sum = sum*10+r;
-          t/=10;
-        }
+        int palin = checkPalindrome(n);
         
-        if(sum==n){
-          System.out.println(n+" is a palindrome number!");
+         if(palin == n){
+            System.out.println(n+" is palindrome number.");
         }else{
-          System.out.println(n+" is not a palindrome number!");
+            System.out.println(n+" is not palindrome number!");
         }
-          sc.close();
+            sc.close();
     }
 }
