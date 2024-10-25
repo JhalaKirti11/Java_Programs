@@ -1,5 +1,5 @@
 import java.io.Serializable;
-public class ShoppingItem implements Serializable{
+public class _01ShoppingItem implements Serializable{
     String itemName;
     int price;
     int quantity;
