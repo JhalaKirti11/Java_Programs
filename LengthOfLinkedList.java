@@ -28,6 +28,6 @@ public static int linkedListLength(Node head){
         n2.next = n3;
         n3.next = n4;
         n4.next = n5;
-      System.out.println("Length of the LinkedLust: "+linkedListLength(n1));
+      System.out.println("Length of the LinkedList: "+linkedListLength(n1));
     }
 }
