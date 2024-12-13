@@ -7,7 +7,7 @@ import modifiers.accessClass;
     }
 }
 
-public class CallClass {
+public class CallCreatedClass {
     public static void main(String[] args){
         calculate ob = new calculate();
         System.out.println(ob.sum);
