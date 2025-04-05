@@ -6,7 +6,7 @@ Given the array nums after the possible rotation and an integer target, return t
 if it is in nums, or -1 if it is not in nums. */
 
 
-public class FindPositionRotateArray {
+public class FindPositionInRotateArray {
     public static int search(int[] nums, int target){
         int result = -1;
         for(int i = 0; i<nums.length; i++){
@@ -20,6 +20,6 @@ public class FindPositionRotateArray {
         int[] nums = {1,2,4,5,6,7,8,3,10};
         int target = 3;
         int result = search(nums, target);
-        System.out.println("r "+result);
+        System.out.println("result "+result);
     }
 }
